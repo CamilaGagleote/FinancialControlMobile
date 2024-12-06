@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Controle Financeiro</string>
+    <string name="nome_ra">Camila Gagleote - 1110482312050</string>
+    <string name="capa">App para auxílio de Controle Financeiro</string>
+    <string name="receita">Receita</string>
+    <string name="despesa">Despesa</string>
+    <string name="inserir">Inserir</string>
+    <string name="editar">Editar</string>
+    <string name="buscar">Buscar</string>
+    <string name="listar">Listar</string>
+    <string name="excluir">Excluir</string>
+    <string name="id_r">Id</string>
+    <string name="id_d">Id</string>
+    <string name="fonte">Fonte da receita</string>
+    <string name="valor_receita">Valor recebido</string>
+    <string name="data_receita">Data recebimento</string>
+    <string name="categoria_receita">Categoria receita</string>
+    <string name="valor_despesa">Valor despesa</string>
+    <string name="data_despesa">Data pagamento</string>
+    <string name="categoria_despesa">Categoria despesa</string>
+    <string name="forma_pagamento">Forma de pagamento</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
