@@ -88,7 +88,6 @@ public class DespesaFragment extends Fragment {
         try{
             despesaController.inserir(despesa);
             limparCampos();
-            listarDespesas();
             Toast.makeText(getContext(), "Despesa inserida com sucesso!", Toast.LENGTH_SHORT).show();
         } catch (Exception e) {
             Toast.makeText(getContext(), "Erro ao inserir despesa: " + e.getMessage(), Toast.LENGTH_LONG).show();
@@ -113,7 +112,6 @@ public class DespesaFragment extends Fragment {
         try{
             despesaController.editar(despesa);
             limparCampos();
-            listarDespesas();
             Toast.makeText(getContext(), "Despesa inserida com sucesso!", Toast.LENGTH_SHORT).show();
         } catch (Exception e) {
             Toast.makeText(getContext(), "Erro ao inserir despesa: " + e.getMessage(), Toast.LENGTH_LONG).show();
@@ -130,7 +128,6 @@ public class DespesaFragment extends Fragment {
             despesa.setId(id);
             despesaController.excluir(despesa);
             limparCampos();
-            listarDespesas();;
             Toast.makeText(getContext(), "Despesa excluída com sucesso!", Toast.LENGTH_SHORT).show();
         }catch(Exception e){
             Toast.makeText(getContext(), "Erro ao excluir despesa: " + e.getMessage(), Toast.LENGTH_LONG).show();
