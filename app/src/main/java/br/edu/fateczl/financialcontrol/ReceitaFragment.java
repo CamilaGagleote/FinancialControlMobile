@@ -92,7 +92,6 @@ public class ReceitaFragment extends Fragment {
         try{
             receitaController.inserir(receita);
             limparCampos();
-            listarReceitas();
             Toast.makeText(getContext(), "Receita inserida com sucesso!", Toast.LENGTH_SHORT).show();
         } catch (Exception e) {
             Toast.makeText(getContext(), "Erro ao inserir receita: " + e.getMessage(), Toast.LENGTH_LONG).show();
@@ -117,7 +116,6 @@ public class ReceitaFragment extends Fragment {
         try{
             receitaController.editar(receita);
             limparCampos();
-            listarReceitas();
             Toast.makeText(getContext(), "Receita editada com sucesso!", Toast.LENGTH_SHORT).show();
         }catch(Exception e){
             Toast.makeText(getContext(), "Erro ao editar receita: " + e.getMessage(), Toast.LENGTH_LONG).show();
@@ -131,7 +129,6 @@ public class ReceitaFragment extends Fragment {
             receita.setId(id);
             receitaController.excluir(receita);
             limparCampos();
-            listarReceitas();
             Toast.makeText(getContext(), "Receita excluída com sucesso!", Toast.LENGTH_SHORT).show();
 
         }catch(Exception e){
@@ -150,7 +147,7 @@ public class ReceitaFragment extends Fragment {
                 etFonteR.setText(receita.getFonteR());
                 etValorR.setText(String.valueOf(receita.getValor()));
                 etDataR.setText(receita.getData());
-                etCategoriaR.setText(receita.getData());
+                etCategoriaR.setText(receita.getCategoria());
             }else{
                 Toast.makeText(getContext(), "Receita não encontrada!", Toast.LENGTH_SHORT).show();
             }
